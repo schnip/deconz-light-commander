@@ -18,6 +18,7 @@ export class SceneComponent implements OnInit {
   }
 
   activate() {
+    this.lightsService.clearScene();
     this.lightsService.startScene(this.model);
   }
 
