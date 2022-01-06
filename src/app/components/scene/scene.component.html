@@ -8,7 +8,7 @@
     <div>
         Pulsers
         <div *ngFor="let pulser of model.pulsers">
-            <app-pulser></app-pulser>
+            <app-pulser [model]="pulser"></app-pulser>
         </div>
         <button (click)="addPulser()">Add Pulser</button>
     </div>

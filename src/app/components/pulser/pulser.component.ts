@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pulser } from 'src/app/models/pulser';
 
 @Component({
   selector: 'app-pulser',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pulser.component.scss']
 })
 export class PulserComponent implements OnInit {
+  @Input() model: Pulser = new Pulser();
 
   constructor() { }
 

@@ -6,4 +6,5 @@ export class Pulser {
     durationRange: number = 3000;
     transitionSpeed: number = 500;
     transitionSpeedRange: number = 500;
+    concurrent: number = 1;
 }

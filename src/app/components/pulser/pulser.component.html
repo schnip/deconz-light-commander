@@ -1,1 +1,26 @@
-<p>pulser works!</p>
+<fieldset>
+    <div>
+        Color <input type="color" [(ngModel)]="model.color" />
+    </div>
+    <div>
+        Frequency <input type="number" [(ngModel)]="model.frequency">
+    </div>
+    <div>
+        Frequency Range <input type="number" [(ngModel)]="model.frequencyRange">
+    </div>
+    <div>
+        Duration <input type="number" [(ngModel)]="model.duration">
+    </div>
+    <div>
+        Duration Range <input type="number" [(ngModel)]="model.durationRange">
+    </div>
+    <div>
+        Transition Speed <input type="number" [(ngModel)]="model.transitionSpeed">
+    </div>
+    <div>
+        Transition Speed Range <input type="number" [(ngModel)]="model.transitionSpeedRange">
+    </div>
+    <div>
+        Concurrent <input type="number" [(ngModel)]="model.concurrent">
+    </div>
+</fieldset>
