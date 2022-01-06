@@ -1,0 +1,16 @@
+<fieldset>
+    <div>
+        Base Color <input type="color" [(ngModel)]="model.baseColor" />
+    </div>
+    <div>
+        Syncronize <input type="checkbox" [(ngModel)]="model.syncronize">
+    </div>
+    <div>
+        Pulsers
+        <div *ngFor="let pulser of model.pulsers">
+            <app-pulser></app-pulser>
+        </div>
+        <button (click)="addPulser()">Add Pulser</button>
+    </div>
+    <button (click)="activate()">Activate Scene</button>
+</fieldset>

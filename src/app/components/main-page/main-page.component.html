@@ -1,0 +1,12 @@
+<div>
+    API Address <input [(ngModel)]="url" />
+</div>
+<div>
+    Light Ids <input [(ngModel)]="lightIds" />
+</div>
+<button (click)="loadService()">Set new url and ids</button>
+<div *ngFor="let scene of scenes">
+    <app-scene></app-scene>
+</div>
+<button (click)="addScene()">Add Scene</button>
+<button (click)="stop()">Stop</button>
